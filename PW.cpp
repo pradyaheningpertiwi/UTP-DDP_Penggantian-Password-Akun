@@ -28,8 +28,6 @@ void cek(string password,int batas){
         if (c >= 123 && c <= 126)//kode simbol
             simbol = 1;
         }
-   
-    
         if (angka != 1)
             cout<< "\n\nTidak terdapat angka !\n";
         if (kapital != 1)
@@ -40,7 +38,6 @@ void cek(string password,int batas){
             cout<< "\nTidak terdapat simbol !\n";
         if (angka !=1 || kapital !=1 || huruf_kecil !=1 || simbol !=1)
             cout<< "\n\nHarap Masukkan Kembali Password.\n";
-
         if (angka== 1 && kapital== 1 && huruf_kecil== 1 && simbol== 1)
             cout << "\nPassword SUKSES\n";
 }
@@ -51,7 +48,7 @@ int main(){
 	cout<<"                        SELAMAT DATANG                                "<<endl;
 	cout<<"**********************************************************************\n"<<endl;
 	
-	string menu[2]={"Lupa password","Keluar"};
+	string menu[2]={"Lupa Password","Keluar"};
   	cout<<"\tSILAHKAN PILIH MENU DIBAWAH INI: "<<endl;
   	cout<<endl;
   	
@@ -63,10 +60,9 @@ int main(){
 	if (choice == '2'){
 	cout << "\n\n\tTerima kasih sudah menggunakan program kami.";
             cout << "\n\n";
-
-}
-
-	else if(choice == '1'){
+	}else if(choice != '1'||choice != '2'){
+	cout<< "\tPilihan Tidak Tersedia";
+	}else if(choice == '1'){
 
 	cout<<"\n============== Silahkan ganti password akun anda ====================="<<endl;
 	cout<<endl;
@@ -80,7 +76,7 @@ int main(){
 	cout<<"	5. Tidak Melebihi Batas Maksimal Karakter                    |"<<endl;
 	cout<<"----------------------------------------------------------------------"<<endl;
    
-    int n=8;
+    int n=6;
     string pass;	
 	cout<<endl;
 	cout<<"Maksimal jumlah karakter \t : "<<n<<endl; 
