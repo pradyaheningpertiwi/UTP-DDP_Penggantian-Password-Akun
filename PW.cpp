@@ -89,7 +89,7 @@ int main(){
    
    if(pass.size()<=n){
         cek(pass,n);
-         
+    
    }else{
     cout<<"\nPassword yang anda masukkan tidak sesuai ketentuan."<<endl;
     cout<<"\nHarap Masukkan Kembali Passwordnya Tsayy"<<endl;
