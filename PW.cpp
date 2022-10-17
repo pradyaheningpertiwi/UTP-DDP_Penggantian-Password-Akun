@@ -80,7 +80,7 @@ int main(){
 	cout<<"	5. Tidak Melebihi Batas Maksimal Karakter                    |"<<endl;
 	cout<<"----------------------------------------------------------------------"<<endl;
    
-    int n=6;
+    int n=8;
     string pass;	
 	cout<<endl;
 	cout<<"Maksimal jumlah karakter \t : "<<n<<endl; 
